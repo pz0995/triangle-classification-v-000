@@ -25,7 +25,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
 
     if @side0 == @side1 && @side1 == @side2
       return :equilateral
-    elsif @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && 
+    elsif @side1 == @side2 || @side0 == @side2 || @side0 == @side1 
       # (@triangle_array.uniq.length == @triangle_array.length).count == 1
       return :isosceles
     elsif @triangle_array.uniq.length == @triangle_array.length
