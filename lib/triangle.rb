@@ -30,7 +30,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
     else @triangle_array.uniq.length == @triangle_array.length
       return :scalene
     end
-  # end
+  end
 
 
 
