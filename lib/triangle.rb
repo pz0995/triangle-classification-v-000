@@ -17,30 +17,31 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       return :isosceles
     when (triangle_array.uniq.length > 1) == true
      return :scalene
-end
+    end
     # else triangle_array.uniq.length == triangle_array.length
     #   return :scalene
+  end
+    def valid?
+      if @side0 <= 0 || @side1 <= 0 || @side2 <= 0
+          begin
+            raise TriangleError.new
+          # rescue TriangleError => error
+              puts error.message
+          end
+        end
+      if (@side0 + @side1) <  @side2 || @side0 > (@side1 + @side2) || (@side0 + @side2) < @side1
+        return
+        begin
+          raise TriangleInequality.new
+        # rescue TriangleInequality => error
+            puts error.message
+        end
 
-  if @side0 <= 0 || @side1 <= 0 || @side2 <= 0
-      begin
-        raise TriangleError.new
-      # rescue TriangleError => error
-          puts error.message
-      end
-    if (@side0 + @side1) <  @side2 || @side0 > (@side1 + @side2) || (@side0 + @side2) < @side1
-      return
-      begin
-        raise TriangleInequality.new
-      # rescue TriangleInequality => error
-          puts error.message
-      end
-
+        # end
+      # end
     end
-  # end
 end
 
-
-end
     class TriangleInequality < StandardError
       def message
         "Error: the sum of two sides must be greater than the third side"
