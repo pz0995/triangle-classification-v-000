@@ -10,12 +10,12 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
 
   def kind
     # (equilateral:, isosceles:, scalene:)
-    # case triangle_array
-    if @side0 == @side1 && @side1 == @side2
+    case triangle_array
+    when @side0 == @side1 && @side1 == @side2
       return :equilateral
-    elsif @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (triangle_array.uniq.length == triangle_array.length).count == 1
+    when @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (triangle_array.uniq.length == triangle_array.length).count == 1
       return :isosceles
-    if (triangle_array.uniq.length > 1) == true
+    when (triangle_array.uniq.length > 1) == true
      return :scalene
 end
     # else triangle_array.uniq.length == triangle_array.length
