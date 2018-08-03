@@ -23,15 +23,15 @@ end
     #   return :scalene
 
   if @side0 < 0 || @side1 < 0 || @side2 < 0
-      begin
-        raise TriangleError
+      # begin
+        raise TriangleError.new
       # rescue TriangleError => error
           puts error.message
       end
     if (@side0 + @side1) <  @side2 || @side0 > (@side1 + @side2) || (@side0 + @side2) < @side1
       return
       begin
-        raise TriangleInequality
+        raise TriangleInequality.new
       # rescue TriangleInequality => error
           puts error.message
       end
