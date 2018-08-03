@@ -18,7 +18,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
         raise TriangleError.new
       # rescue TriangleInequality => error
     end
-  end
+  # end
     # end
   # end
 # # end
