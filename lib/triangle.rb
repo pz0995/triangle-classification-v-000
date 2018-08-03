@@ -5,10 +5,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       @side0 = side0
       @side1 = side1
       @side2 = side2
-      @triangle_array == []
-      @triangle_array << side0
-      @triangle_array << side1
-      @triangle_array << side2
+      @triangle_array == [side0, side1, side2]
   end
 
   def kind
