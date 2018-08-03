@@ -33,6 +33,6 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 end
 
-    class TriangleError < StandardError
-    end
+  class TriangleError < StandardError
+  end
 # end
