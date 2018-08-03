@@ -40,7 +40,7 @@ end
 end
 
 
-
+end
     class TriangleInequality < StandardError
       def message
         "Error: the sum of two sides must be greater than the third side"
