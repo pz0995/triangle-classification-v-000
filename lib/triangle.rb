@@ -13,14 +13,12 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
         begin
           raise TriangleError.new
         rescue TriangleError => error
-            puts error.message
         end
       end
     if (@side0 + @side1) <  @side2 || (@side1 + @side2) < @side0 || (@side0 + @side2) < @side1
       begin
-        raise TriangleInequality.new
+        raise TriangleError.new
       rescue TriangleInequality => error
-        puts error.message
     end
       # end
     # end
@@ -37,15 +35,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 
 
-    class TriangleInequality < StandardError
-      def message
-        "Error: the sum of two sides must be greater than the third side"
-      end
-    end
 
     class TriangleError < StandardError
-      def message
-        "Error: each triangle length must be greater than 0"
-      end
     end
 end
