@@ -22,7 +22,7 @@ end
     # else triangle_array.uniq.length == triangle_array.length
     #   return :scalene
 
-  when @side0 < 0 || @side1 < 0 || @side2 < 0
+  if @side0 < 0 || @side1 < 0 || @side2 < 0
       begin
         raise TriangleError
       rescue TriangleError => error
