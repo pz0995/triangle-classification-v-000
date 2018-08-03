@@ -12,13 +12,13 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
     if @side0 <= 0 || @side1 <= 0 || @side2 <= 0
         begin
           raise TriangleError.new
-        rescue TriangleError => error
+        # rescue TriangleError => error
         end
       end
     if (@side0 + @side1) <  @side2 || (@side1 + @side2) < @side0 || (@side0 + @side2) < @side1
       begin
         raise TriangleError.new
-      rescue TriangleInequality => error
+      # rescue TriangleInequality => error
     end
       # end
     # end
