@@ -22,11 +22,11 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
         raise TriangleInequality.new
       # rescue TriangleInequality => error
           puts error.message
-      end
+    end
       # end
     # end
   end
-end
+# end
 
     case triangle_array
     when @side0 == @side1 && @side1 == @side2
