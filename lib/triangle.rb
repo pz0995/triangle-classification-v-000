@@ -14,7 +14,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
         # rescue TriangleError => error
     # end
       # end
-    elsif (@side1 + @side2) < @side0 || (@side0 + @side2) < @side1
+    elsif (@side1 + @side2) < @side0 || (@side0 + @side2) < @side1 || (@side0 + @side1) < @side2
         raise TriangleError.new
       # rescue TriangleInequality => error
     end
