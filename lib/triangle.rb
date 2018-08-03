@@ -1,7 +1,7 @@
 class Triangle
 attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :triangle_array
 
-  def initialize(side0:, side1:, side2:)
+  def initialize(side0, side1, side2)
       @side0 = side0
       @side1 = side1
       @side2 = side2
