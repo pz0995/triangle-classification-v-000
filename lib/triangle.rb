@@ -19,9 +19,8 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene
     (triangle_array.uniq.length > 1) ? false : true
     if true then return :scalene
 end
-
-    else triangle_array.uniq.length == triangle_array.length
-      return :scalene
+    # else triangle_array.uniq.length == triangle_array.length
+    #   return :scalene
 
     when [0] < 0 || [1] < 0 || [2] < 0
       begin
