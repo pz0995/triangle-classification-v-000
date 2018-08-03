@@ -29,8 +29,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 end
 
-  def kind
-    # (equilateral:, isosceles:, scalene:)
+  def kind(equilateral:, isosceles:, scalene:)
     case triangle_array
     when @side0 == @side1 && @side1 == @side2
       return :equilateral
