@@ -9,7 +9,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 
   def kind
-    if (@side0 < 0 || @side1 < 0 || @side2 < 0) || ((@side1 + @side2) < @side0 || (@side0 + @side2) < @side1 || (@side0 + @side1) < @side2)
+    if @side0 < 0 || @side1 < 0 || @side2 < 0 || ((@side1 + @side2) < @side0 || (@side0 + @side2) < @side1 || (@side0 + @side1) < @side2)
           raise TriangleError
         # rescue TriangleError => error
     # end
