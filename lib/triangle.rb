@@ -25,11 +25,11 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 # end
     case triangle_array
-    when @side0 == @side1 && @side1 == @side2
+    when @side0 == @side1 && @side1 == @side2 then
       return :equilateral
-    when @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (triangle_array.uniq.length == triangle_array.length).count == 1
+    when @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (triangle_array.uniq.length == triangle_array.length).count == 1 then
       return :isosceles
-    when triangle_array.uniq.length == triangle_array.length
+    when triangle_array.uniq.length == triangle_array.length then
       return :scalene
     end
   end
