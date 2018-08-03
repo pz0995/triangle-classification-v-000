@@ -20,7 +20,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
     end
       # end
     # end
-  # end
+  end
 # # end
 
     if @side0 == @side1 && @side1 == @side2
@@ -37,4 +37,4 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
 
     class TriangleError < StandardError
     end
-end
+# end
