@@ -12,7 +12,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
     if @side0 <= 0 || @side1 <= 0 || @side2 <= 0
         begin
           raise TriangleError.new
-        # rescue TriangleError => error
+        rescue TriangleError => error
             puts error.message
         end
       end
@@ -20,7 +20,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       return
       begin
         raise TriangleInequality.new
-      # rescue TriangleInequality => error
+      rescue TriangleInequality => error
           puts error.message
     end
       # end
