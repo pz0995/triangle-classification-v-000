@@ -32,7 +32,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
     when @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (triangle_array.uniq.length == triangle_array.length).count == 1
       return :isosceles
     when triangle_array.uniq.length == triangle_array.length
-     return :scalene
+      return :scalene
     end
   end
 
