@@ -28,7 +28,7 @@ end
       rescue TriangleError => error
           puts error.message
       end
-    if (@side0 + @side1) <  @side2 || @side0 > (@side1) + @side2 || (@side0 + @side2) < @side1
+    if (@side0 + @side1) <  @side2 || @side0 > (@side1 + @side2) || (@side0 + @side2) < @side1
       return
       begin
         raise TriangleInequality
