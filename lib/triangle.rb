@@ -31,8 +31,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       return :scalene
     end
   end
-
-
+end
 
     class TriangleError < StandardError
     end
