@@ -9,7 +9,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
   end
 
   def kind
-    if (@side0 < 1 || @side1 < 1 || @side2 < 1) || (@side0 + @side1) <  @side2 
+    if (@side0 < 1 || @side1 < 1 || @side2 < 1) || (@side0 + @side1) <  @side2
           raise TriangleError
         # rescue TriangleError => error
         end
@@ -19,11 +19,10 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       # rescue TriangleInequality => error
     end
       # end
-    end
+    # end
   end
 # # end
 
-    # case @triangle_array
     if @side0 == @side1 && @side1 == @side2
       return :equilateral
     elsif @side1 == @side2 || @side0 == @side2 || @side0 == @side1 && (@triangle_array.uniq.length == @triangle_array.length).count == 1
