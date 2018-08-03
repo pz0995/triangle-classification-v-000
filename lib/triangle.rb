@@ -17,7 +17,7 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
         end
       end
     if (@side0 + @side1) <  @side2 || @side0 > (@side1 + @side2) || (@side0 + @side2) < @side1
-      return
+      # return
       begin
         raise TriangleInequality.new
       rescue TriangleInequality => error
