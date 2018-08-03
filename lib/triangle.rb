@@ -8,7 +8,8 @@ attr_accessor :side0, :side1, :side2, :equilateral, :isosceles, :scalene, :trian
       @triangle_array == [side0, side1, side2]
   end
 
-  def kind(equilateral:, isosceles:, scalene:)
+  def kind
+    # (equilateral:, isosceles:, scalene:)
     if @side0 < 1 || @side1 < 1 || @side2 < 1
         begin
           raise TriangleError.new
